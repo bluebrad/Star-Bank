@@ -1,5 +1,5 @@
 <?php
-//This class is used so that all of the files in the models directory can access the database without the need to rewrite the same basic functions repeatedly.
+//This class is used so that all of the files in the models directory can access the database without the need to rewrite the same basic functions repeatedly. This is no longer active! and needs to be exported to the project.
 class Model {
     public $connection;
     public $db_host = "udc353.encs.concordia.ca";

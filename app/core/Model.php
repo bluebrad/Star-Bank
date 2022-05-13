@@ -6,8 +6,7 @@ class Model {
     public $db_user = "udc353_2";
     public $db_pword = "danger";
     public $db_name = "udc353_2";
-
-     //connect to the server
+//connect to the server
      private function connectDB() {
          mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
          $this->connection = new mysqli($this->db_host, $this->db_user, $this->db_pword, $this->db_name);
@@ -18,8 +17,7 @@ class Model {
              return true;
          }
      }
-
-     //disconnect from the server
+//disconnect from the server
      private function disconnectDB() {
          mysqli_close($this->connection);
      }
@@ -37,8 +35,7 @@ class Model {
              return $results;
          };
      }
-
-     //insert the data
+//insert the data
      public function insertData($query) {
          $this->connectDB();
          if($this->connection->query($query)===true) {
@@ -49,8 +46,7 @@ class Model {
              return false;
          }
      }
-
-     //update the data
+//update the data
      public function updateData($query) {
          $this->connectDB();
          if($this->connection->query($query)===true) {
